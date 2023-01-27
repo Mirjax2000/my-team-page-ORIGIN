@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=PT+Serif:wght@700&family=Poppins:wght@400;600&display=swap");
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* border-box */
+html {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/* --- vyber --- */
+::-moz-selection {
+  background-color: #1683ff;
+  color: #ffffff;
+}
+
+::selection {
+  background-color: #1683ff;
+  color: #ffffff;
+}
+
+body {
+  padding-top: 5rem;
+  background-color: #fafafa;
+}
+
+.container {
+  max-width: 90rem;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+.flex > * {
+  flex-basis: 40%;
+}
+
+header {
+  color: #000000;
+  margin-top: 6.875rem;
+}
+header h1 {
+  font-family: "PT Serif", serif;
+  font-size: 2.25rem;
+  font-weight: 700;
+  letter-spacing: -0.045rem;
+}
+header .header_div {
+  font-family: "Poppins", sans-serif;
+}
+header .header_div h2 {
+  font-weight: 600;
+  font-size: 1.125rem;
+  line-height: 1.6875rem;
+  text-transform: uppercase;
+  margin-bottom: 0.625rem;
+}
+header .header_div p {
+  width: 80%;
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 1.6875rem;
+}
+
+.magic {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+  padding: 0 3rem;
+}
+.magic .boxes {
+  flex-basis: 28%;
+  position: relative;
+  min-width: 16rem;
+  flex-grow: 0;
+}
+.magic .boxes.boxes:nth-child(5) {
+  padding-top: 5rem;
+}
+.magic .boxes.boxes:nth-child(2) {
+  padding-top: 5rem;
+}
+.magic .boxes .vertical {
+  position: absolute;
+  writing-mode: vertical-rl;
+  display: inline-block;
+  font-family: "PT Serif", serif;
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 16px;
+  text-transform: uppercase;
+  padding-left: 8px;
+}
+.magic .boxes img {
+  width: 100%;
+  max-width: 240px;
+  height: auto;
+}
+.magic .boxes .name {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 1.125rem;
+  line-height: 1.6875rem;
+  margin-top: 0.5rem;
+}
+
+footer {
+  padding-bottom: 3rem;
+}
+footer p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 0.875rem;
+  text-align: center;
+  color: #A9A9A9;
+}
+
+@media only screen and (max-width: 1000px) {
+  header .header_div p {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 920px) {
+  .magic {
+    padding: 0 1rem;
+    gap: 2rem;
+  }
+}
+@media only screen and (max-width: 770px) {
+  .flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+  .flex > * {
+    flex-basis: 80%;
+  }
+  header .header_div p {
+    font-size: 0.875rem;
+  }
+  .magic .boxes {
+    flex-basis: 40%;
+    min-width: 2rem;
+  }
+  .magic .boxes .vertical {
+    font-size: 0.8rem;
+    font-weight: 400;
+  }
+}
+
+/*# sourceMappingURL=home.css.map */
