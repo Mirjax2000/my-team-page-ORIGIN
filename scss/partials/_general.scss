@@ -77,7 +77,7 @@ header {
 
 .magic {
     display: flex;
-    gap: 1rem;
+    column-gap: 2rem;
     justify-content: center;
     flex-wrap: wrap;
     margin-top: 3rem;
@@ -88,7 +88,7 @@ header {
     .boxes {
         flex-basis: 28%;
         position: relative;
-        min-width: 16rem;
+        // min-width: 16rem;
         flex-grow: 0;
 
         &.boxes:nth-child(5) {
@@ -117,6 +117,7 @@ header {
             width: 100%;
             max-width: 240px;
             height: auto;
+            border-radius: 5px;
         }
 
         .name {

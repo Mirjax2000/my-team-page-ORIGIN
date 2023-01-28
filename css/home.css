@@ -91,7 +91,7 @@ header .header_div p {
 
 .magic {
   display: flex;
-  gap: 1rem;
+  column-gap: 2rem;
   justify-content: center;
   flex-wrap: wrap;
   margin-top: 3rem;
@@ -101,7 +101,6 @@ header .header_div p {
 .magic .boxes {
   flex-basis: 28%;
   position: relative;
-  min-width: 16rem;
   flex-grow: 0;
 }
 .magic .boxes.boxes:nth-child(5) {
@@ -125,6 +124,7 @@ header .header_div p {
   width: 100%;
   max-width: 240px;
   height: auto;
+  border-radius: 5px;
 }
 .magic .boxes .name {
   font-family: "Poppins", sans-serif;
